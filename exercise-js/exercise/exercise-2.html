@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2</title>
+    
+</head>
+<body>
+    <h2>The input as a string and insert asterisk (*)
+        between each two continuously character</h2>
+
+    
+    <p>The result is : </p ><p id="output"></p>
+    
+
+    <script type="text/javascript">
+        
+
+        
+        const inputv=window.prompt();
+        const str =inputv.toString();
+        const result = [str[0]];
+        console.log(result.length);
+       
+
+
+        for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]==str[x]))
+        {
+     
+        result.splice(str[x],1, '*');
+        
+
+        }
+        else
+        {
+        result.push(str[x]);
+         }
+        
+    }
+    console.log(result.join(''));
+   
+        document.getElementById('output').innerHTML=result.join('');
+
+
+    </script>
+    
+</body>
+</html>

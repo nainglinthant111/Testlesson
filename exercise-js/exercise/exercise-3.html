@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-3</title>
+</head>
+<body>
+    <h2>The square and sum of the array elements
+        and then find the average of the array</h2>
+        
+       
+
+        <p>The square and sum of the array : <span  id="output1"></span> </p>
+       
+        <p>Average : <span id="output2"></span> </p>
+
+    <script type="text/javascript">
+
+     var array = [1, 2, 3, 4, 5, 6],
+   
+    s = 0,
+    average=0,
+    i;
+for (i = 0; i < array.length; i += 1) 
+   {
+    s +=  Math.pow(array[i], 2);
+   
+    }
+
+document.getElementById("output1").innerHTML=s;
+average=s/array.length;
+document.getElementById("output2").innerHTML=average;
+
+
+
+
+    </script>
+</body>
+</html>
